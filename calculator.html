@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>  
+<body>
+    <div id="calculator">
+        <input type="text" id="display" readonly>
+        <div class="button-container">
+            <button onclick="currentDisplay=''
+            document.getElementById('display').value =currentDisplay; ">C</button>
+            
+            <button class="button"
+            
+            onclick="currentDisplay=currentDisplay + '1'
+            document.getElementById('display').value =currentDisplay; ">1</button> 
+           
+            
+             <button 
+             onclick="currentDisplay=currentDisplay + '2'
+            document.getElementById('display').value =currentDisplay; ">2</button>
+
+            <button onclick="currentDisplay=currentDisplay + '+'
+            document.getElementById('display').value =currentDisplay; ">+</button>
+
+            <button onclick="currentDisplay=currentDisplay + '3'
+            document.getElementById('display').value =currentDisplay; ">3</button>
+
+            <button  onclick="currentDisplay=currentDisplay + '4'
+            document.getElementById('display').value =currentDisplay; ">4</button><br>
+
+            <button onclick="currentDisplay=currentDisplay + '-'
+            document.getElementById('display').value =currentDisplay; ">-</button>
+
+            <button onclick="currentDisplay=currentDisplay + '5'
+            document.getElementById('display').value =currentDisplay; ">5</button>
+
+            <button onclick="currentDisplay=currentDisplay + '6'
+            document.getElementById('display').value =currentDisplay; ">6</button>
+
+            <button onclick="currentDisplay=currentDisplay + '*'
+            document.getElementById('display').value =currentDisplay; ">*</button>
+             
+            <button onclick="currentDisplay=currentDisplay + '7'
+            document.getElementById('display').value =currentDisplay; ">7</button>
+
+            <button onclick="currentDisplay=currentDisplay + '8'
+            document.getElementById('display').value =currentDisplay; ">8</button><br>
+
+            <button onclick="currentDisplay=currentDisplay + '/'
+            document.getElementById('display').value =currentDisplay; ">/</button>
+            
+            <button onclick="currentDisplay=currentDisplay + '9'
+            document.getElementById('display').value =currentDisplay; ">9</button>
+
+            <button onclick="currentDisplay=currentDisplay + '0'
+            document.getElementById('display').value =currentDisplay; ">0</button>
+
+            <button onclick="currentDisplay=currentDisplay + '.'
+            document.getElementById('display').value =currentDisplay; ">.</button><br> 
+           <button class ="button" onclick="
+           let result = eval(currentDisplay)
+           currentDisplay=result
+           document.getElementById('display').value=currentDisplay;">=</button>
+           
+            
+
+        </div>
+        
+    </div>
+    <script>
+         let currentDisplay = '';
+        // // console.log(currentDisplay )
+         document.querySelector('display').value=currentDisplay; 
+
+    </script>
+</body>
+</html>
